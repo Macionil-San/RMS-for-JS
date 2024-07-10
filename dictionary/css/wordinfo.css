@@ -1,0 +1,39 @@
+#word-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 51%;
+    margin: 0 auto;
+}
+
+#word-look h1 {
+    font-size: 2rem;
+}
+
+#phonetic {
+    color: var(--purple);
+    font-size: 1rem;
+}
+
+#word-audio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#word-audio > img {
+    width: 3rem;
+}
+
+#word-audio > img:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #word-info {
+        width: 90%;
+    }
+}

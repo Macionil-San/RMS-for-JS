@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+
+    <link rel="icon" href="./assets/images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/global.css">
+    
+    <script src="./app.js" defer></script>
+</head>
+<body>
+
+    <nav id="navbar">
+        <a href="https://asendant.github.io/dictionary/"><img src="./assets/images/logo.svg" alt="logo" id="logo"/></a>
+        <div id="navbar__settings">
+            <div id="navbar__font">
+                <h3 id="navbar-family__selector">Sans Serif <img src="./assets/images/icon-arrow-down.svg" alt=""></h3>
+                <div id="font-family__selector" class="hidden">
+                    <div class="font-family__option sans-serif selected" onClick="handleFontChange('Inter')">Sans Serif</div>
+                    <div class="font-family__option serif" onClick="handleFontChange('Lora')">Serif</div>
+                    <div class="font-family__option monospace" onClick="handleFontChange('Inconsolata')">Monospace</div>
+                </div>
+            </div>
+            <div id="navbar__divider"></div>
+            <div id="navbar__theme">
+                <label class="switch">
+                    <input type="checkbox" id="switch__value">
+                    <span class="slider round"></span>
+                </label>
+                <img src="./assets/images/icon-moon.svg" alt="light mode" id="light-mode-moon" class=""/>
+                <img src="./assets/images/icon-moon-dark.svg" alt="dark mode" id="dark-mode-moon" class="hidden">
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="search">
+        <form>
+            <input type="search" name="search" id="search__bar" placeholder="Search for any word..."/>
+        </form>
+        <p id="empty__text" class="hidden">Whoops, can't be empty...</p>
+    </section>
+
+    <section id="word-info" class="hidden">
+        <div id="word-look">
+            <h1 id="word__heading">Word</h1>
+            <p id="phonetic">phonetic</p>
+        </div>
+        <div id="word-audio">
+            <img src="./assets/images/icon-play.svg" alt="" id="word__audio">
+        </div>
+    </section>
+    <section id="word-definitions" class="hidden">
+        <div class="word-meaning">
+            <div class="word-meaning-info">
+                <h2 class="partOfSpeech">noun</h2>
+                <div class="horizontalBar"></div>
+            </div>
+            <div class="meaning">
+                <h3>Meaning</h3>
+                <ul>
+                    <li class="definition">definition 1</li>
+                    <li class="definition">definition 2</li>
+                </ul>
+                <h4 class="synonyms">Synonyms <span>electronic keyboard</span></h4>
+            </div>
+        </div>
+        <div class="word-meaning">
+            <div class="word-meaning-info">
+                <h2 class="partOfSpeech">verb</h2>
+                <div class="horizontalBar"></div>
+            </div>
+            <div class="meaning">
+                <h3>Meaning</h3>
+                <ul>
+                    <li class="definition">To type on a computer keyboard<br /><span class="example">“Keyboarding is the part of this job I hate the most.”</span></li>
+                </ul>
+        </div>
+        <div class="horizontalBar"></div>
+        <p class="source">Source: <a href="https://www.wikipedia.com" target="_blank">https://www.wikipedia.com <img src="./assets/images/icon-new-window.svg" alt=""></a></p>
+    </section>
+
+    <section id="word-not-found" class="">
+        <h1>😕</h1>
+        <h2>No Definitions Found</h2>
+        <p>Sorry pal, we couldn't find definitions for the word you were looking for. You can try the search again at later time or head to the web instead.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,27 @@
+#word-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 51%;
+    margin: 0 auto;
+
+    margin-top: 8.25rem;
+}
+
+#word-not-found > h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#word-not-found > h2 {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+#word-not-found > p {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    color: var(--greyFour);
+    text-align: center;
+}

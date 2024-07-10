@@ -1,0 +1,18 @@
+@import url('./variables.css');
+@import url('./navigation.css');
+@import url('./search.css');
+@import url('./wordinfo.css');
+@import url('./wordmeaning.css');
+@import url('./wordnotfound.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}

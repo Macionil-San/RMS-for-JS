@@ -1,0 +1,94 @@
+#word-definitions {
+    width: 51%;
+    margin: 0 auto;
+}
+
+.word-meaning {
+    margin-top: 2.5rem;
+}
+
+.word-meaning-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.partOfSpeech {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.horizontalBar {
+    width: 100%;
+    height: 1px;
+    background-color: var(--greyThree);
+    margin-top: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.meaning {
+    margin-top: 2.5rem;
+}
+
+.meaning > h3 {
+    color: var(--greyFour);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.meaning > ul {
+    margin-left: 1.375rem;
+    margin-top: 1.5625rem;
+
+    line-height: 1.5rem;
+}
+
+.definition::marker {
+    color: var(--purple);
+}
+
+.meaning > h4 {
+    margin-top: 2.5rem;
+}
+
+.synonyms {
+    color: var(--greyFour);
+    font-weight: 400;
+}
+
+.synonyms > span {
+    color: var(--purple);
+    font-weight: 600;
+}
+
+.synonym:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.example {
+    color: var(--greyFour);
+}
+
+.source {
+    margin-top: 1.1875rem;
+    font-size: 0.875rem;
+    color: var(--greyFour);
+
+    margin-bottom: 1.1875rem;
+}
+
+.source > a {
+    color: white;
+}
+
+.source > a > img {
+    margin-left: 0.5625rem;
+}
+
+@media screen and (max-width: 768px) {
+    #word-definitions {
+        width: 90%;
+    }
+}
